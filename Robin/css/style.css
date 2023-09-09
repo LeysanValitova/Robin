@@ -1,0 +1,344 @@
+body { 
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Sen';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header {
+    background-image: url(../assets/images/bg_01.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-container, .header-container__list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container__list {
+    gap: 48px;
+}
+
+.header-container {
+    padding: 2rem 4.5rem;
+    align-items: flex-start;
+}
+
+.header-container__link_active {
+    padding: 2rem 1.5rem;
+    background-color: #5221E6;
+}
+
+.bg-img {
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-author {
+display: flex;
+align-items: center;
+padding: 5rem 2.5rem 5.25rem 0;
+}
+
+.header__img {
+    justify-content: flex-start;
+    z-index: 1;
+}
+
+.header__title {
+    width: 738px;
+    justify-content: flex-end;
+    font-size: 4.875rem;
+    font-weight: 700;;
+}
+
+.header__text {
+    width: 738px;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 27px;
+    
+}
+
+.about-author__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.gray-text {
+    color: #FFFFFF80
+}
+
+
+
+/* section "Companies I have worked for in the past"*/
+
+.section-1 {
+    padding: 7.5rem 4.5rem;
+    color: #8491A0;
+}
+
+.section-1__subtitle {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.section-1__title {
+    width: 690px;
+    color: #FFF;
+    font-size: 3.438rem;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 0.5rem;
+}
+
+.grid-container {
+    display: grid;
+    margin-top: 2.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-container__title {
+    font-size: 7.313rem;
+    font-weight: 400;
+}
+
+.grid-container__subtitle {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 1.375rem 0;
+}
+
+.google_color {
+    color: #3CC74E;
+}
+
+.facebook_color {
+    color: #609BFF;
+}
+
+.dribbble_color {
+    color: #E95D90;
+}
+
+.grid-container__text {
+    width: 368px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* section-2 Philosophy & values*/
+
+.section-2__container {
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-2__content {
+    background-color: #FFF3E4;
+}
+
+.section-2__img {
+    background-image: url(../assets/images/img_02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-2__title {
+    color: #181823;
+    font-size: 3.438rem;
+    font-weight: 700;
+    padding: 7.5rem 7.5rem 0 4.5rem;
+}
+
+.section-2__text {
+    width: 576px;
+    color: #5B6876;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 27px;
+    margin: 1.5rem 0 8.375rem 0;
+    padding: 0 4.5rem;
+}
+
+.section-2__excerpt {
+    color: #181823;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: underline;
+    padding-left: 4.5rem;
+}
+
+/*@media*/
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+   .header__img_media-1024px {
+    display: none;
+   }
+
+   .header__title {
+    width: 408px;
+    font-size: 3.5rem;
+   }
+
+   .header__text {
+    width: 408px;
+    font-size: 1.125rem;
+   }
+
+   .header {
+    background-image: none;
+   }
+
+   .section-1__title {
+    width: 688px;
+   }
+
+   .grid-container__item {
+    width: 214px;
+   }
+
+   .grid-container__subtitle {
+    width: 195px;
+   }
+
+   .grid-container__text {
+    width: 195px;
+   }
+
+   .section-2__title, .section-2__text {
+    width: 304px;
+   }
+
+
+   .section-2__title {
+    padding: 5rem 2.5rem 0 2.5rem;
+   }
+   
+   .section-2__text {
+    margin: 1.5rem 0 0 0;
+    padding: 0 2.5rem ;
+   }
+
+   .section-2__excerpt{
+    width: 116px;
+    margin-top: 4.185rem;
+    padding-left: 2.5rem;
+    margin-right: 0;
+   }
+
+   .section-2__img {
+    background-image: url(../assets/images/img_media02.png);
+   }
+
+   .section-2__content {
+    display: flex;
+    flex-direction: column;
+   }
+}
+
+@media screen and (min-width: 1023px) {
+    .header__img_media-768px {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .header__img_media-768px {
+        display: none;
+    }
+
+    .header{
+        background-image: none;
+    }
+
+    .about-author {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .header__img_media-1024px {
+        width: 100vh;
+    }
+
+    .header__title {
+        width: 320px;
+        font-size: 32px;
+    }
+
+    .header__text {
+        font-size: 18px;
+    }
+
+    .section-1__title {
+        width: 320px;
+        font-size: 32px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .section-1__subtitle {
+        padding-left: 20px; 
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-container__text {
+        width: 320px;
+    }
+
+    .section-2__container {
+        display: flex;
+        flex-direction: column;
+        gap:50px;
+    }
+
+    .section-2__img {
+        height: 450px;
+       }
+
+       .section-2__title {
+        padding: 48px 20px 0 20px;
+        width: 320px;
+        font-size: 32px;
+    }
+
+    .section-2__text {
+        padding: 48px 20px 0 20px;
+        width: 320px;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    .section-2__excerpt{
+        width: 116px;
+        margin-top: 90px;
+        padding: 0 0 51px 20px;    }
+
+}
